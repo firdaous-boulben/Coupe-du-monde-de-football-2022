@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="css\images\icon.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="./js/main.js"></script>
+    <title>FIFA 2022 </title>
+</head>
+<body>
+    <header>
+        <div id="volet1">
+            <div id="branding">
+                <a href="./css/images/Logo.webp" target="_blank">
+                <img src="./css/images/Logo.webp" alt="World Cup logo">
+                </a>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#volet1">Accueil</a></li>
+                    <li onclick="fg()" id="menu-deroulant"><a href="#volet2">Groupes</a>
+                        <ul id="sous-menu">
+                            <li value="1" id="grpAa" onclick="f21(this)"><a href="#volet2">Groupe A</a></li>
+                            <li value="2" id="grpBb" onclick="f21(this)"><a href="#volet2">Groupe B</a></li>
+                            <li value="3" id="grpCc" onclick="f21(this)"><a href="#volet2">Groupe C</a></li>
+                            <li value="4" id="grpDd" onclick="f21(this)"><a href="#volet2">Groupe D</a></li>
+                            <li value="5" id="grpEe" onclick="f21(this)"><a href="#volet2">Groupe E</a></li>
+                            <li value="6" id="grpFf" onclick="f21(this)"><a href="#volet2">Groupe F</a></li>
+                            <li value="7" id="grpGg" onclick="f21(this)"><a href="#volet2">Groupe G</a></li>
+                            <li value="8" id="grpHh" onclick="f21(this)"><a href="#volet2">Groupe H</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="fm()"><a href="#matchs">Matchs</a></li>
+                    <li onclick="fc()"><a href="#classement">Classement</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="diapo" data-speed="2000" data-transition="700">
+            <div class="elements">
+                <div class="element">
+                    <a onclick="fp()" href="#details-pub"><img src="./css/images/pub1.PNG" alt="Adidas"></a>
+                </div>
+                <div class="element">
+                    <a href="https://www.coca-cola.com/" target="_blank"><img src="./css/images/pub2.PNG" alt="Coca Cola"></a>
+                </div>
+                <div class="element">
+                    <a href="http://www.wanda-group.com/" target="_blank"><img src="./css/images/pub3.PNG" alt="Wanda Group"></a>
+                </div>
+                <div class="element">
+                    <a href="https://www.hyundai.com/ma/fr" target="_blank"><img src="./css/images/pub4.PNG" alt="HYUNDAI • KIA"></a>
+                </div>
+                <div class="element">
+                    <a href="https://www.qatarairways.com" target="_blank"><img src="./css/images/pub5.PNG" alt="Qatar Airways"></a>
+                </div>
+                <div class="element">
+                    <a href="https://www.qatarenergy.qa/" target="_blank"><img src="./css/images/pub6.PNG" alt="QatarEnergy"></a>
+                </div>
+                <div class="element">
+                    <a href="#" target="_blank"><img src="./css/images/pub7.PNG" alt="Visa"></a>
+                </div>
+            </div>
+            <i id="nav-gauche" class="fa fa-chevron-left"></i>
+            <i id="nav-droite" class="fa fa-chevron-right"></i>
+        </div>
+    </main>
+    <section id="showcase">
+		<div>
+			<h1>Coupe du Monde de la FIFA, Qatar 2022</h1>
+			<p>Vous voulez tout savoir sur la Coupe du Monde au Qatar ? Vous êtes au bon endroit puisqu'ici, on vous dit tout ce qu'il y a à savoir !</p>
+		</div>
+	</section>
+    <section id="volets">
+        <section id="v234">
+        <div id="volet2">
+            <h1>Groupes</h1>
+            <div class="box" id="grpA">
+                <h2>Groupe A</h2>
+                <span>
+                    <button class="icon-btn" onclick="f22(this)"><i class='fa fa-plus'></i></button>
+                    <button class="icon-btn" onclick="f23(this)"><i class='fa fa-edit'></i></button>
+                    <button class="icon-btn" onclick="f24(this)"><i class='fa fa-trash'></i></button>
+                </span>
+                <table>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/netherlands/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Pays-Bas (NED)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/ecuador/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Equateur (ECU)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/senegal/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Sénégal (SEN)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/qatar/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Qatar (QAT)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box" id="grpB">
+                <h2>Groupe B</h2>
+                <span>
+                    <button class="icon-btn" onclick="f22(this)"><i class='fa fa-plus'></i></button>
+                    <button class="icon-btn" onclick="f23(this)"><i class='fa fa-edit'></i></button>
+                    <button class="icon-btn" onclick="f24(this)"><i class='fa fa-trash'></i></button>
+                </span>
+                <table>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/england/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Angleterre (ENG)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/wales/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Pays de Galles (WAL)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Etats-Unis (USA)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/iran/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Iran (IRN)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box" id="grpC">
+                <h2>Groupe C</h2>
+                <span>
+                    <button class="icon-btn" onclick="f22(this)"><i class='fa fa-plus'></i></button>
+                    <button class="icon-btn" onclick="f23(this)"><i class='fa fa-edit'></i></button>
+                    <button class="icon-btn" onclick="f24(this)"><i class='fa fa-trash'></i></button>
+                </span>
+                <table>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/saudi-arabia/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Arabie Saoudite (KSA)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/mexico/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Mexique (MEX)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/poland/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Pologne (POL)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/argentina/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Argentine (ARG)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box" id="grpD">
+                <h2>Groupe D</h2>
+                <span>
+                    <button class="icon-btn" onclick="f22(this)"><i class='fa fa-plus'></i></button>
+                    <button class="icon-btn" onclick="f23(this)"><i class='fa fa-edit'></i></button>
+                    <button class="icon-btn" onclick="f24(this)"><i class='fa fa-trash'></i></button>
+                </span>
+                <table>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/tunisia/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Tunisie (TUN)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/denmark/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Danemark (DEN)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/australia/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Australie (AUS)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> France (FRA)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box" id="grpE">
+                <h2>Groupe E</h2>
+                <span>
+                    <button class="icon-btn" onclick="f22(this)"><i class='fa fa-plus'></i></button>
+                    <button class="icon-btn" onclick="f23(this)"><i class='fa fa-edit'></i></button>
+                    <button class="icon-btn" onclick="f24(this)"><i class='fa fa-trash'></i></button>
+                </span>
+                <table>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/costa-rica/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Costa Rica (CRC)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/germany/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Allemagne (GER)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Japon (JPN)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/spain/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Espagne (ESP)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box" id="grpF">
+                <h2>Groupe F</h2>
+                <span>
+                    <button class="icon-btn" onclick="f22(this)"><i class='fa fa-plus'></i></button>
+                    <button class="icon-btn" onclick="f23(this)"><i class='fa fa-edit'></i></button>
+                    <button class="icon-btn" onclick="f24(this)"><i class='fa fa-trash'></i></button>
+                </span>
+                <table>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/belgium/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn" value="1" onclick="f31(this)"> Belgique (BEL)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/canada/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn" value="2" onclick="f31(this)"> Canada (CAN)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/croatia/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn" value="3" onclick="f31(this)"> Croatie (CRO)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/morocco/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn" value="4" onclick="f31(this)"> Maroc (MAR)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box" id="grpG">
+                <h2>Groupe G</h2>
+                <span>
+                    <button class="icon-btn" onclick="f22(this)"><i class='fa fa-plus'></i></button>
+                    <button class="icon-btn" onclick="f23(this)"><i class='fa fa-edit'></i></button>
+                    <button class="icon-btn" onclick="f24(this)"><i class='fa fa-trash'></i></button>
+                </span>
+                <table>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/brazil/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Brésil (BRA)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/cameroon/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Cameroun (CMR)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/serbia/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Serbie (SRB)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/switzerland/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Suisse (SUI)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box" id="grpH">
+                <h2>Groupe H</h2>
+                <span>
+                    <button class="icon-btn" onclick="f22(this)"><i class='fa fa-plus'></i></button>
+                    <button class="icon-btn" onclick="f23(this)"><i class='fa fa-edit'></i></button>
+                    <button class="icon-btn" onclick="f24(this)"><i class='fa fa-trash'></i></button>
+                </span>
+                <table>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/ghana/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Ghana (GHA)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Corée du Sud (KOR)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/portugal/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Portugal (POR)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.countryflags.com/thumbs/uruguay/flag-400.png" width="32px"></td>
+                        <td><button class="team-btn"> Uruguay (URU)</button></td>
+                        <td><button class="minus-btn" onclick="f24(this)"><i class='fa fa-minus'></i></button></td>
+                    </tr>
+                </table>         
+            </div>
+            <div class="box">
+                <div class="image">
+                     <img src="./css/images/GA.jpg">
+                </div>
+                <p><strong>32 équipes qualifiées</strong></p>
+                <span>
+                    <img src="https://cdn.countryflags.com/thumbs/germany/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/england/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/saudi-arabia/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/argentina/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/australia/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/belgium/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/brazil/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/cameroon/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/canada/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/costa-rica/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/croatia/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/denmark/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/ecuador/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/spain/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/ghana/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/iran/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/morocco/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/mexico/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/netherlands/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/wales/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/poland/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/portugal/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/qatar/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/senegal/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/serbia/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/switzerland/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/tunisia/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/uruguay/flag-400.png" width="32px" height="20px">
+                    <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" width="32px" height="20px">
+                </span>
+                <p><strong>8 groupes</strong></p>
+             </div>
+        </div>
+        <div id="v34">
+        <div id="volet3">
+            <h1>Equipes</h1>
+            <div class="box-container">
+                <div class="box" id="ps1">
+                    <p>Ici s'afficheront les équipes sélectionnés de chaque groupe.</p>
+                </div>
+                <div id="team1" class="box">
+                    <h2>Équipe de Belgique (BEL)</h2>
+                    <img src="./css/images/belgique.jpg" usemap="#belgique" alt="Équipe de belgique de football">
+                </div>
+                <div id="team2" class="box">
+                    <h2>Équipe de Canada (CAN)</h2>
+                    <img src="./css/images/canada.jpg" usemap="#canada" alt="Équipe de canada de football">
+                </div>
+                <div id="team3" class="box">
+                    <h2>Équipe de Croatie (CRO)</h2>
+                    <img src="./css/images/croatie.jpg" usemap="#croatie" alt="Équipe de croatie de football">
+                </div>
+                <div id="team4" class="box">
+                    <h2>Équipe de Maroc (MAR)</h2>
+                    <img src="./css/images/maroc.jpg" usemap="#maroc" alt="Équipe de maroc de football">
+                    <map name="maroc">
+                        <area  alt="Achraf Dari" title="Achraf Dari" href="#" coords="80,45,20" shape="circle">
+                        <area  alt="Azzedine Ounahi" title="Azzedine Ounahi" href="#" coords="150,56,18" shape="circle">
+                        <area onclick="f32(this)" alt="Yassine Bounou" title="Yassine Bounou" href="#volet4" coords="223,46,24" shape="circle">
+                        <area  alt="Youssef En-Nesyri" title="Youssef En-Nesyri" href="#" coords="299,50,22" shape="circle">
+                        <area  alt="Selim Amallah" title="Selim Amallah" href="#" coords="373,57,21" shape="circle">
+                        <area  alt="Romain Saïss" title="Romain Saïss" href="#" coords="442,48,24" shape="circle">
+                        <area  alt="Noussair Mazraoui" title="Noussair Mazraoui" href="#" coords="80,91,21" shape="circle">
+                        <area onclick="f32(this)" alt="Achraf Hakimi" title="Achraf Hakimi" href="#volet4" coords="149,95,19" shape="circle">
+                        <area  alt="Hakim Ziyech" title="Hakim Ziyech" href="#" coords="225,97,21" shape="circle">
+                        <area  alt="Sofyan Amrabat" title="Sofyan Amrabat" href="#" coords="316,94,22" shape="circle">
+                        <area  alt="Sofiane Boufal" title="Sofiane Boufal" href="#" coords="403,96,25" shape="circle">
+                    </map>
+                </div>
+                </div>
+            </div>
+            <div id="volet4">
+                <h1>Joueurs</h1>
+                <div class="box-container">
+                    <div class="box" id="ps2">
+                        <p>Ici s'afficheront les joueurs de l'équipe sélectionnés de chaque groupe.</p>
+                    </div>
+                <div id="joueurs-maroc" class="box">
+                    <h2>Équipe de Maroc : Les Lions de l'Atlas</h2>
+                    <h3>Groupe F</h3>
+                    <img src="./css/images/logo mar.png" width="128px">
+                    <table id="tab">
+                        <tr class="ligne">
+                            <td><img src="./css/images/Yassine-Bounou.jpg"></td>
+                            <td class="col2">Yassine Bounou</td>
+                            <td>Vainqueur de la C3: 2020 (Séville FC)</td>
+                            <td><button onclick="f41(this)"><i class='fa fa-upload'></i></button></td>
+                            <td><button onclick="f42(this)"><i class='fa fa-edit'></i></button></td>
+                            <td><button onclick="f43(this)"><i class='fa fa-trash'></i></button></td>
+                        </tr>
+                        <tr class="ligne">
+                            <td><img src="./css/images/Acharf-Hakimi.jpg"></td>
+                            <td class="col2">Achraf Hakimi</td>
+                            <td>Vainqueur du Mondial des Clubs: 2017 (Real Madrid)<br>
+                                Vainq. de la Supercoupe d'Allemagne: 2019 (Borussia Dortmund)<br>
+                                Champion d'Italie: 2021 (Inter Milan)<br>
+                                Champion de France: 2022 (Paris-SG)<br>
+                                Vainqueur du Trophée des champions: 2022 (Paris-SG)
+                            </td>
+                            <td><button onclick="f41(this)"><i class='fa fa-upload'></i></button></td>
+                            <td><button onclick="f42(this)"><i class='fa fa-edit'></i></button></td>
+                            <td><button onclick="f43(this)"><i class='fa fa-trash'></i></button></td>
+                        </tr>
+                        <tr class="ligne">
+                            <td><img src="./css/images/Noussair-Mazraoui.jpg"></td>
+                            <td class="col2">Noussair Mazraoui</td>
+                            <td>Vainq. de la Supercoupe d'Allemagne: 2022 (Bayern Munich)<br>
+                                Champion de Pays-Bas: 2019, 2021, 2022 (Ajax Amsterdam)<br>
+                                Vainqueur de la Coupe de Pays-Bas: 2019 (Ajax Amsterdam
+                            </td>
+                            <td><button onclick="f41(this)"><i class='fa fa-upload'></i></button></td>
+                            <td><button onclick="f42(this)"><i class='fa fa-edit'></i></button></td>
+                            <td><button onclick="f43(this)"><i class='fa fa-trash'></i></button></td>
+                        </tr>
+                        <tr class="ligne">
+                            <td><img src="./css/images/Sofyan Amrabat.jpg"></td>
+                            <td class="col2">Sofyan Amrabat</td>
+                            <td>Champion de Turquie: 2013 (Galatasaray)</td>
+                            <td><button onclick="f41(this)"><i class='fa fa-upload'></i></button></td>
+                            <td><button onclick="f42(this)"><i class='fa fa-edit'></i></button></td>
+                            <td><button onclick="f43(this)"><i class='fa fa-trash'></i></button></td>
+                        </tr>
+                        <tr class="ligne">
+                            <td><img src="./css/images/Hakim-Ziyech.jpg"></td>
+                            <td class="col2" value="N1">Hakim Ziyech</td>
+                            <td>Vainqueur du Mondial des Clubs: 2021 (Chelsea)<br>
+                                Vainq. de la Supercoupe d'Europe: 2021 (Chelsea<br>
+                                Vainq. de la Supercoupe de Pays-Bas: 2019 (Ajax Amsterdam<br>
+                                Champion de Pays-Bas: 2019 (Ajax Amsterdam)<br>
+                                Vainqueur de la Coupe de Pays-Bas: 2019 (Ajax Amsterdam)<br>
+                                Finaliste de la C3: 2017 (Ajax Amsterdam)<br>
+                                Finaliste de la Coupe d'Angleterre: 2021, 2022 (Chelsea)
+                            </td>
+                            <td><button onclick="f41(this)"><i class='fa fa-upload'></i></button></td>
+                            <td><button onclick="f42(this)"><i class='fa fa-edit'></i></button></td>
+                            <td><button onclick="f43(this)"><i class='fa fa-trash'></i></button></td>
+                        </tr>
+                    </table>
+                    <div>
+                        <button class="btn" onclick="f44()" ondblclick="f45(this)">Ajouter</button>
+                        <form id="add">
+                            <label>Nom: <input type="text" name="nom" placeholder="Nom du joueur" id="nom" required /></label>
+                            <label>Palmarès: <textarea type="text" name="palmares" placeholder="Description brève de son palmarès" id="palmares" required></textarea></label>
+                            <label>Photo: <input type="file" accept="image/*" name="image" id="image" required /></label>
+                        </form>
+                    </div>
+                </div>
+                <div id="edition" class="box">
+                    <article id="joueur1">
+                        <button class="return-btn" onclick="f46(this)"><i class="fa fa-rotate-left"></i></button>
+                        <fieldset id="basics">
+                            <div>
+                                <h2>Yassine Bounou</h2>
+                                <ul>
+                                    <li>Pays :  Maroc</li>
+                                    <li>Né le : 05 avril 1991 , à Montréal (CAN)</li>
+                                    <li>Taille : 1m92</li>
+                                    <li>Poids : 78 kg</li>
+                                    <li>Poste : Gardien</li>
+                                    <li>Numéro : 13</li>
+                                    <li>Matchs joués : 12 (saison 2022-2023)</li>
+                                </ul>
+                            </div>
+                            <img src="./css/images/N1.jpg" width="200px">
+                        </fieldset>
+                        <fieldset>
+                            <h3>Carrière Internationale</h3>
+                            <ul>
+                                <li>Sélections : 47</li>
+                                <li>1ère sélection : 14 août 2013 <br>Tanger : Maroc - Burkina Faso : 1-2</li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                            <h3>Carrière</h3>
+                            <table>
+                                <thead>
+                                    <th>Saison</th>
+                                    <th>Club</th>
+                                    <th>Matchs</th>
+                                    <th>Buts</th>
+                                </thead>
+                                <tr>
+                                    <td>2019 - 2023</td>
+                                    <td>Séville FC</td>
+                                    <td>107</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2017 - 2019</td>
+                                    <td>Gérone</td>
+                                    <td>83</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>2014 - 2016</td>
+                                    <td>Saragosse</td>
+                                    <td>38</td>
+                                    <td>-</td>
+                                </tr>
+                                    <td>2012 - 2014</td>
+                                    <td>Atlético de Madrid B</td>
+                                    <td>47</td>
+                                    <td>-</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </article>
+                    <article id="joueur2">
+                        <button class="return-btn" onclick="f46(this)"><i class="fa fa-rotate-left"></i></button>
+                        <fieldset id="basics">
+                            <div>
+                                <h2>Achraf Hakimi</h2>
+                                <ul>
+                                    <li>Pays :  Maroc</li>
+                                    <li>Né le : 04 novembre 1998 , à Madrid (ESP)</li>
+                                    <li>Taille : 1m81</li>
+                                    <li>Poids : 69 kg</li>
+                                    <li>Poste : Défenseur</li>
+                                    <li>Numéro : 2</li>
+                                    <li>Matchs joués : 14 (saison 2022-2023)</li>
+                                    <li>Buts marqués : 3 (saison 2022-2023)</li>
+                                    <li>Passes décisives : 1 (saison 2022-2023)</li>
+                                </ul>
+                            </div>
+                            <img src="./css/images/N2.jpg" width="200px">
+                        </fieldset>
+                        <fieldset>
+                            <h3>Carrière Internationale</h3>
+                            <ul>
+                                <li>Sélections : 56</li>
+                                <li>Buts : 8</li>
+                                <li>1ère sélection : 11 oct. 2016 <br>Marrakech : Maroc - Canada : 4-0</li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                            <h3>Carrière</h3>
+                            <table>
+                                <thead>
+                                    <th>Saison</th>
+                                    <th>Club</th>
+                                    <th>Matchs</th>
+                                    <th>Buts</th>
+                                </thead>
+                                <tr>
+                                    <td>2021 - 2023</td>
+                                    <td>Paris-SG</td>
+                                    <td>60</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>2020 - 2021</td>
+                                    <td>Inter Milan</td>
+                                    <td>42</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>2018 - 2020</td>
+                                    <td>Borussia Dortmund</td>
+                                    <td>67</td>
+                                    <td>11</td>
+                                </tr>
+                                    <td>2017 - 2018</td>
+                                    <td>Real Madrid</td>
+                                    <td>11</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>2016 - 2017</td>
+                                    <td>Real Madrid Castilla</td>
+                                    <td>28</td>
+                                    <td>1</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </article>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+    <div id="matchs">
+        <h1>Matchs</h1>
+        <h2>Phase de groupes &nbsp<button class="add-btn" onclick="addm(this)"><i class='fa fa-plus'></i></button></h2>
+        <div class="container">
+            <div class="match">
+                <span>
+                    <button class="icon-btn" onclick="f23(this)"><i class='fa fa-edit'></i></button>
+                    <button class="icon-btn" onclick="f24(this)"><i class='fa fa-trash'></i></button>
+                </span>
+                <h3 class="groupe">Groupe F</h3>
+                <h4>Terminé</h4>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="https://cdn.countryflags.com/thumbs/morocco/flag-400.png" />
+                            </div>
+                            <p class="team-name">Maroc</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-date">01 Decembre 2022 à <strong>16:00</strong>  
+                            </div>
+                            <div class="match-score">
+                                <span class="match-score-number">2</span>
+                                <span class="match-score-divider">:</span>
+                                <span class="match-score-number">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team--home">
+                            <div class="team-logo">
+                                <img src="https://cdn.countryflags.com/thumbs/canada/flag-400.png" />
+                            </div>
+                            <p class="team-name"> Canada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="match">
+                <span>
+                    <button class="icon-btn" onclick="f23(this)"><i class='fa fa-edit'></i></button>
+                    <button class="icon-btn" onclick="f24(this)"><i class='fa fa-trash'></i></button>
+                </span>
+                <h3>Groupe F</h3>
+                <h4>Terminé</h4>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="https://cdn.countryflags.com/thumbs/croatia/flag-400.png" />
+                            </div>
+                            <p class="team-name">Croatie</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-date">
+                            01 Decembre 2022 à <strong>16:00</strong>  
+                            </div>
+                            <div class="match-score">
+                                <span class="match-score-number">0</span>
+                                <span class="match-score-divider">:</span>
+                                <span class="match-score-number">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="https://cdn.countryflags.com/thumbs/belgium/flag-400.png" />
+                            </div>
+                            <p class="team-name"> Belgique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Huitièmes de finale &nbsp<button class="add-btn" onclick="addm(this)"><i class='fa fa-plus'></i></button></h2>
+        <div class="container">
+            <div class="match">
+                <span>
+                    <button class="icon-btn" onclick="f23(this)"><i class='fa fa-edit'></i></button>
+                    <button class="icon-btn" onclick="f24(this)"><i class='fa fa-trash'></i></button>
+                </span>
+                <h3 class="groupe">Huitièmes de finale</h3>
+                <h4>Terminé</h4>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="https://cdn.countryflags.com/thumbs/netherlands/flag-400.png" />
+                            </div>
+                            <p class="team-name">Pays-Bas</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-date">03 Decembre 2022 à <strong>16:00</strong>  
+                            </div>
+                            <div class="match-score">
+                                <span class="match-score-number">3</span>
+                                <span class="match-score-divider">:</span>
+                                <span class="match-score-number">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team--home">
+                            <div class="team-logo">
+                                <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" />
+                            </div>
+                            <p class="team-name"> Etats-Unis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="match">
+                <span>
+                    <button class="icon-btn" onclick="f23(this)"><i class='fa fa-edit'></i></button>
+                    <button class="icon-btn" onclick="f24(this)"><i class='fa fa-trash'></i></button>
+                </span>
+                <h3>Huitièmes de finale</h3>
+                <h4>À venir</h4>
+                <div class="match-content">
+                    <div class="column">
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="https://cdn.countryflags.com/thumbs/morocco/flag-400.png" />
+                            </div>
+                            <p class="team-name">Maroc</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="match-details">
+                            <div class="match-date">
+                            06 Decembre 2022 à <strong>16:00</strong>  
+                            </div>
+                            <div class="match-score">
+                                <span class="match-score-number">--</span>
+                                <span class="match-score-divider">:</span>
+                                <span class="match-score-number">--</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="https://cdn.countryflags.com/thumbs/spain/flag-400.png" />
+                            </div>
+                            <p class="team-name"> Espagne</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Quarts de finale &nbsp<button class="add-btn" onclick="addm(this)"><i class='fa fa-plus'></i></button></h2>
+        <div class="container"></div>
+        <h2>Demi-finales &nbsp<button class="add-btn" onclick="addm(this)"><i class='fa fa-plus'></i></button></h2>
+        <div class="container"></div>
+        <h2>Match pour la 3ème place &nbsp<button class="add-btn" onclick="addm(this)"><i class='fa fa-plus'></i></button></h2>
+        <div class="container"></div>
+        <h2>Finale &nbsp<button class="add-btn" onclick="addm(this)"><i class='fa fa-plus'></i></button></h2>
+        <div class="container"></div>
+    </div>    
+    </div>
+    <div id="classement">
+        <h1>Classement</h1>
+        <div class="class">
+            <table>
+                <thead>
+                    <th colspan="11">Groupe A</th>
+                </thead>
+                <tr>
+                    <th colspan="3">Equipe</th>
+                    <th>MJ</th><th>G</th><th>N</th><th>P</th><th>BP</th><th>BC</th><th>DB</th><th>Pts</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/netherlands/flag-400.png" width="32px"></td>
+                    <td>Pays-Bas</td>
+                    <td>3</td><td>2</td><td>1</td><td>0</td><td>5</td><td>1</td><td>4</td><td>7</td>
+                </tr> 
+                <tr>
+                    <td>2</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/senegal/flag-400.png" width="32px"></td>
+                    <td>Sénégal</td>
+                    <td>3</td><td>2</td><td>0</td><td>1</td><td>5</td><td>4</td><td>1</td><td>6</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/ecuador/flag-400.png" width="32px"></td>
+                    <td>Equateur</td>
+                    <td>3</td><td>1</td><td>1</td><td>1</td><td>4</td><td>3</td><td>1</td><td>4</td>
+                </tr>   
+                <tr>
+                    <td>4</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/qatar/flag-400.png" width="32px"></td>
+                    <td>Qatar</td>
+                    <td>3</td><td>0</td><td>0</td><td>3</td><td>1</td><td>7</td><td>-6</td><td>0</td>
+                </tr>            
+            </table> 
+        </div>
+        <div class="class">
+            <table>
+                <thead>
+                    <th colspan="11">Groupe B</th>
+                </thead>
+                <tr>
+                    <th colspan="3">Equipe</th>
+                    <th>MJ</th><th>G</th><th>N</th><th>P</th><th>BP</th><th>BC</th><th>DB</th><th>Pts</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/england/flag-400.png" width="32px"></td>
+                    <td>Angleterre</td>
+                    <td>3</td><td>2</td><td>1</td><td>0</td><td>9</td><td>2</td><td>7</td><td>7</td>
+                </tr> 
+                <tr>
+                    <td>2</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" width="32px"></td>
+                    <td>Etats-Unis</td>
+                    <td>3</td><td>1</td><td>2</td><td>0</td><td>2</td><td>1</td><td>1</td><td>5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/iran/flag-400.png" width="32px"></td>
+                    <td>Iran</td>
+                    <td>3</td><td>1</td><td>0</td><td>2</td><td>4</td><td>7</td><td>-3</td><td>3</td>
+                </tr>   
+                <tr>
+                    <td>4</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/wales/flag-400.png" width="32px"></td>
+                    <td>Pays de Galles</td>
+                    <td>3</td><td>0</td><td>1</td><td>2</td><td>1</td><td>6</td><td>-5</td><td>1</td>
+                </tr>            
+            </table> 
+        </div>
+        <div class="class">
+            <table>
+                <thead>
+                    <th colspan="11">Groupe C</th>
+                </thead>
+                <tr>
+                    <th colspan="3">Equipe</th>
+                    <th>MJ</th><th>G</th><th>N</th><th>P</th><th>BP</th><th>BC</th><th>DB</th><th>Pts</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/argentina/flag-400.png" width="32px"></td>
+                    <td>Argentine</td>
+                    <td>3</td><td>2</td><td>0</td><td>1</td><td>5</td><td>2</td><td>3</td><td>6</td>
+                </tr> 
+                <tr>
+                    <td>2</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/poland/flag-400.png" width="32px"></td>
+                    <td>Pologne</td>
+                    <td>3</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td>0</td><td>4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/mexico/flag-400.png" width="32px"></td>
+                    <td>Mexique</td>
+                    <td>3</td><td>1</td><td>1</td><td>1</td><td>2</td><td>3</td><td>-1</td><td>4</td>
+                </tr>   
+                <tr>
+                    <td>4</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/saudi-arabia/flag-400.png" width="32px"></td>
+                    <td>Arabie Saoudite</td>
+                    <td>3</td><td>1</td><td>0</td><td>2</td><td>3</td><td>5</td><td>-2</td><td>3</td>
+                </tr>            
+            </table> 
+        </div>
+        <div class="class">
+            <table>
+                <thead>
+                    <th colspan="11">Groupe D</th>
+                </thead>
+                <tr>
+                    <th colspan="3">Equipe</th>
+                    <th>MJ</th><th>G</th><th>N</th><th>P</th><th>BP</th><th>BC</th><th>DB</th><th>Pts</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" width="32px"></td>
+                    <td>France</td>
+                    <td>3</td><td>2</td><td>0</td><td>1</td><td>6</td><td>3</td><td>3</td><td>6</td>
+                </tr> 
+                <tr>
+                    <td>2</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/australia/flag-400.png" width="32px"></td>
+                    <td>Australie</td>
+                    <td>3</td><td>2</td><td>0</td><td>1</td><td>3</td><td>4</td><td>-1</td><td>6</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/tunisia/flag-400.png" width="32px"></td>
+                    <td>Tunisie</td>
+                    <td>3</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>4</td>
+                </tr>   
+                <tr>
+                    <td>4</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/denmark/flag-400.png" width="32px"></td>
+                    <td>Danemark</td>
+                    <td>3</td><td>0</td><td>1</td><td>2</td><td>1</td><td>2</td><td>-2</td><td>1</td>
+                </tr>            
+            </table> 
+        </div>
+        <div class="class">
+            <table>
+                <thead>
+                    <th colspan="11">Groupe E</th>
+                </thead>
+                <tr>
+                    <th colspan="3">Equipe</th>
+                    <th>MJ</th><th>G</th><th>N</th><th>P</th><th>BP</th><th>BC</th><th>DB</th><th>Pts</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" width="32px"></td>
+                    <td>Japon</td>
+                    <td>3</td><td>2</td><td>0</td><td>1</td><td>4</td><td>3</td><td>1</td><td>6</td>
+                </tr> 
+                <tr>
+                    <td>2</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/spain/flag-400.png" width="32px"></td>
+                    <td>Espagne</td>
+                    <td>3</td><td>1</td><td>1</td><td>1</td><td>9</td><td>3</td><td>6</td><td>4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/germany/flag-400.png" width="32px"></td>
+                    <td>Allemagne</td>
+                    <td>3</td><td>1</td><td>1</td><td>1</td><td>6</td><td>5</td><td>1</td><td>4</td>
+                </tr>   
+                <tr>
+                    <td>4</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/costa-rica/flag-400.png" width="32px"></td>
+                    <td>Costa Rica</td>
+                    <td>3</td><td>1</td><td>0</td><td>2</td><td>3</td><td>11</td><td>-8</td><td>3</td>
+                </tr>            
+            </table> 
+        </div>
+        <div class="class">
+            <table>
+                <thead>
+                    <th colspan="11">Groupe F</th>
+                </thead>
+                <tr>
+                    <th colspan="3">Equipe</th>
+                    <th>MJ</th><th>G</th><th>N</th><th>P</th><th>BP</th><th>BC</th><th>DB</th><th>Pts</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/morocco/flag-400.png" width="32px"></td>
+                    <td>Maroc</td>
+                    <td>3</td><td>2</td><td>1</td><td>0</td><td>4</td><td>1</td><td>3</td><td>7</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/croatia/flag-400.png" width="32px"></td>
+                    <td>Croatie</td>
+                    <td>3</td><td>1</td><td>2</td><td>0</td><td>4</td><td>1</td><td>3</td><td>5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/belgium/flag-400.png" width="32px"></td>
+                    <td>Belgique</td>
+                    <td>3</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>-1</td><td>4</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/canada/flag-400.png" width="32px"></td>
+                    <td>Canada</td>
+                    <td>3</td><td>0</td><td>0</td><td>3</td><td>2</td><td>7</td><td>-5</td><td>0</td>
+                </tr>                  
+            </table> 
+        </div>
+        <div class="class">
+            <table>
+                <thead>
+                    <th colspan="11">Groupe G</th>
+                </thead>
+                <tr>
+                    <th colspan="3">Equipe</th>
+                    <th>MJ</th><th>G</th><th>N</th><th>P</th><th>BP</th><th>BC</th><th>DB</th><th>Pts</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/brazil/flag-400.png" width="32px"></td>
+                    <td>Brésil</td>
+                    <td>3</td><td>2</td><td>0</td><td>1</td><td>4</td><td>1</td><td>3</td><td>7</td>
+                </tr> 
+                <tr>
+                    <td>2</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/switzerland/flag-400.png" width="32px"></td>
+                    <td>Suisse</td>
+                    <td>3</td><td>2</td><td>0</td><td>1</td><td>4</td><td>3</td><td>1</td><td>6</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/cameroonflag-400.png" width="32px"></td>
+                    <td>Cameroun</td>
+                    <td>3</td><td>1</td><td>1</td><td>1</td><td>4</td><td>4</td><td>0</td><td>4</td>
+                </tr>   
+                <tr>
+                    <td>4</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/serbia/flag-400.png" width="32px"></td>
+                    <td>Serbie</td>
+                    <td>3</td><td>0</td><td>1</td><td>2</td><td>5</td><td>8</td><td>-3</td><td>1</td>
+                </tr>            
+            </table> 
+        </div>
+        <div class="class">
+            <table>
+                <thead>
+                    <th colspan="11">Groupe H</th>
+                </thead>
+                <tr>
+                    <th colspan="3">Equipe</th>
+                    <th>MJ</th><th>G</th><th>N</th><th>P</th><th>BP</th><th>BC</th><th>DB</th><th>Pts</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/portugal/flag-400.png" width="32px"></td>
+                    <td>Portugal</td>
+                    <td>3</td><td>2</td><td>0</td><td>1</td><td>6</td><td>4</td><td>2</td><td>6</td>
+                </tr> 
+                <tr>
+                    <td>2</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/poland/flag-400.png" width="32px"></td>
+                    <td>Corée du Sud</td>
+                    <td>3</td><td>1</td><td>1</td><td>1</td><td>4</td><td>4</td><td>0</td><td>4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/uruguayflag-400.png" width="32px"></td>
+                    <td>Uruguay</td>
+                    <td>3</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td>0</td><td>4</td>
+                </tr>   
+                <tr>
+                    <td>4</td>
+                    <td><img src="https://cdn.countryflags.com/thumbs/ghana/flag-400.png" width="32px"></td>
+                    <td>Ghana</td>
+                    <td>3</td><td>1</td><td>0</td><td>2</td><td>5</td><td>7</td><td>-2</td><td>3</td>
+                </tr>            
+            </table> 
+        </div>
+    </div>
+    <div id="details-actu">
+        <article>
+            <h1>Coupe du monde 2022 : le Maroc en huitièmes de finale, une première depuis 1986</h1>
+            <p>Grâce à deux buts d’Hakim Ziyech et de Youssef En-Nesyri, les Marocains terminent premiers de leur groupe. Pour la première fois depuis 1986, les Lions de l’Atlas franchissent la phase de poules d’un Mondial.</p>
+            <div>
+                <figure>
+                    <img src="./css/images/actualite1.jpg" alt="Les Marocains Achraf Dari (à gauche) et Jawad El Yamiq fêtaient la qualification de leur pays" width="100%" height="100%">
+                    <figcaption>Les Marocains Achraf Dari (à gauche) et Jawad El Yamiq fêtaient la qualification de leur pays</figcaption>
+                </figure>
+            </div>
+        </article>
+        <div class="text">
+            <p>« Mon objectif, c’est la Coupe d’Afrique des nations. Pourquoi mentir au peuple marocain ? » Excès de modestie ou non, le sélectionneur du Maroc, Walid Regragui, ne semblait pas beaucoup croire en son équipe avant cette Coupe du monde au Qatar. Après avoir déjà tenu le nul face à la Croatie (0-0), puis avoir dominé la Belgique (2-0), ses Lions de l’Atlas lui ont définitivement donné tort jeudi 1er décembre, en l’emportant face au Canada (2-1). Un succès synonyme de qualification en huitièmes de finale du Mondial.</p>
+            <p>Pas favoris d’un groupe très relevé, les Marocains terminent premiers et sortent des poules du Mondial pour la première fois depuis 1986. C’est le deuxième pays du continent africain à rejoindre les huitièmes de finale, après la qualification du Sénégal mardi – record égalé comme en 2014 avec l’Algérie et le Nigeria –, en attendant le Ghana et le Cameroun qui, vendredi soir, tenteront d’imiter les Marocains.</p>
+            <p>Les Lions de l’Atlas n’avaient besoin que d’un nul face au Canada pour valider leur qualification au tour suivant. Mais pour éviter tout stress, Romain Saïss et ses coéquipiers ont immédiatement pris les devants. Dès la quatrième minute, Hakim Ziyech profitait d’une relance complètement ratée de la part du gardien canadien Milan Borjan pour récupérer un ballon face au but vide. Sans trembler, le milieu de terrain de Chelsea plaçait un ballon piqué.</p>
+            <span class="label">Lire aussi</span>
+            <br>
+            <a href="https://www.lemonde.fr/football/live/2022/12/01/canada-maroc-en-direct-suivez-le-match-de-la-coupe-du-monde-2022_6152527_1616938.html" target="_blank">Canada-Maroc : les Lions de l’Atlas qualifiés pour les huitièmes de finale</a>
+            <br>
+            <a href="https://olympics.com/fr/infos/coupe-du-monde-qualification-huitiemes-finale" target="_blank">Les équipes qualifiées pour les huitièmes de finale de la Coupe du monde 2022</a>
+        </div>
+    </div>
+    <div id="details-pub">
+        <h1>Adidas</h1>
+        <div class="text">
+            <p>Le football est le sport le plus populaire au monde et à ce titre, il fait naturellement partie des priorités stratégiques d’adidas. Depuis plus de 70 ans, adidas est à la pointe de la technologie en matière de chaussures, de ballons et de tenues de football. De par son engagement pour ce sport et sa relation étroite avec les joueurs et les équipes, adidas est devenu un acteur à part entière de l’histoire, du présent et de l’avenir du football.</p>
+            <p>Fort du succès acquis par sa participation à nombre d’événements sportifs d’envergure, adidas est le leader mondial dans le secteur du football. adidas est ainsi le fournisseur officiel des plus grandes compétitions footballistiques de la planète, à l’image de la Coupe du Monde de la FIFA™, de l’EURO de l’UEFA, de la Ligue des Champions de l’UEFA et de la Major League Soccer (MLS). adidas sponsorise également certains des clubs les plus prestigieux, comme le Real Madrid, Manchester United, Arsenal, le Bayern Munich et la Juventus, sans oublier des fédérations renommées telles que la DFB (Allemagne), la RFEF (Espagne), la RBFA (Belgique), l’AFA (Argentine), la JFA (Japon) et, à compter de janvier 2023, la FIGC (Italie). Enfin, d’illustres figures du ballon rond sont équipées par adidas, telles que Lionel Messi, Mohamed Salah, Paulo Dybala, Karim Benzema, Catarina Macario, Jude Bellingham, Vivianne Miedema, Trinity Rodman, Jennifer Hermoso, Serge Gnabry, Pedri, Joao Felix, Lindsey Horan et Wendie Renard.</p>
+            <img src="./css/images/Adidas.webp" alt="Adidas" width="100%">
+            <p>Le lien entre la FIFA et adidas est né il y a plus de 50 ans. Depuis 1970, adidas est le fournisseur du ballon officiel des matches de la Coupe du Monde. Pour chaque édition, les concepteurs adidas cherchent à mettre au point le ballon parfait. En se montrant novateur dans la technologie et dans le design, adidas s’emploie à ce que le ballon officiel devienne un élément emblématique et incontournable de la compétition.</p>
+            <p>Parmi les ballons adidas les plus légendaires se trouvent le Tango, premier ballon alliant avec succès cuir et polyuréthane (1982), l’Azteca, premier ballon entièrement synthétique (1986), le Questra, ballon à base de mousse de polyuréthane (1994), le Tricolore, premier ballon portant une couche de mousse syntactique (1998) et plus récemment le +Teamgeist (2006), qui est devenu la nouvelle référence grâce à son design novateur et sa technologie particulière de panneaux plats.</p>
+            <p>Outre la Coupe du Monde masculine, la marque aux trois bandes est également associée à toutes les autres compétitions de l’instance dirigeante du football, comme la Coupe du Monde des Clubs de la FIFA™, les Coupes du Monde U-20 et U-17 de la FIFA masculines et féminines, la Coupe du Monde de Beach Soccer de la FIFA™ ainsi que la Coupe du Monde de Futsal de la FIFA™. Sur toutes ces épreuves, les officiels, les arbitres, les bénévoles ainsi que tous les participants au programme jeunesse (escortes de joueurs, ramasseurs de ballons, porteurs de drapeaux) sont entièrement équipés de produits adidas.</p>
+            <p>Enfin, dans le cadre de la vision de la FIFA pour rendre le football véritablement mondial, adidas contribue activement à fournir de l’équipement pour les nombreuses initiatives menées dans le monde entier en matière de développement et de responsabilité sociale.</p>
+            <span class="label">Pour plus d'informations</span>
+            <br>
+            <a href="https://www.mena.adidas.com/storefinder" target="_blank">www.adidas.com</a>
+            <br>
+            <a href="https://twitter.com/adidasfootball" target="_blank">@adidasfootball</a>
+        </div>
+    </div>
+    <div id="volet5">
+        <h1>Actualités</h1>
+        <div class="box-container">
+            <div class="box">
+               <div class="image">
+                  <img src="./css/images/actualite1.jpg">
+               </div>
+               <div class="content">
+                  <h2>Coupe du monde 2022 : le Maroc en huitièmes de finale, une première depuis 1986</h2>
+                  <p>Grâce à deux buts d’Hakim Ziyech et de Youssef En-Nesyri, les Marocains terminent premiers de leur groupe. Pour la première fois depuis 1986, les Lions de l’Atlas franchissent la phase de poules d’un Mondial.</p>
+                  <a onclick="fa()" href="#details-actu" class="btn">Voir plus</a>
+                  <div class="icons">
+                     <span> <i class="fas fa-calendar"></i> 01/12/2022  </span>
+                  </div>
+               </div>
+            </div>
+            <div class="box">
+               <div class="image">
+                  <img src="./css/images/actualite2.jpeg">
+               </div>
+               <div class="content">
+                  <h2>La victoire des Lions De L’Atlas dans la presse mondiale</h2>
+                  <p>La joie des Lions de l’Atlas et d'Abdelhamid Sabiri auteur du premier but lors de Belgique-Maroc lors de la Coupe du monde à Doha, le 27 novembre 2022</p>
+                  <a href="https://www.quid.ma/sport/la-victoire-des-lions-de-l%E2%80%99atlas-dans-la-presse-mondiale" target="_blank" class="btn">Voir plus</a>
+                  <div class="icons">
+                     <span> <i class="fas fa-calendar"></i> 28/11/2022</span>
+                  </div>
+               </div>
+            </div>
+            <div class="box">
+               <div class="image">
+                    <img src="./css/images/actualite3.jpeg">
+               </div>
+               <div class="content">
+                    <h2>1re place et qualification pour les 8es de finale : les différents scénarios possibles pour la Croatie, le Maroc et la Belgique dans le groupe F de la Coupe du monde 2022</h2>
+                    <p>GOAL vous explique ce que doivent faire la Croatie, le Maroc et la Belgique pour se qualifier pour les 8es mais aussi pour finir en tête du groupe F.</p>
+                    <a href="https://www.goal.com/fr/news/1re-place-qualification-8es-differents-scenarios-possibles-croatie-maroc-belgique-groupe-f-coupe-du-monde-2022/blt63fcce7ca32fdc71" target="_blank" class="btn">Voir plus</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> 29/11/22 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div id="volet6">
+            <div class="links">
+                <h2>Liens Utiles</h2>
+                <ul>
+                    <li><a href="https://www.fifa.com/fifaplus/fr/tournaments/mens/worldcup/qatar2022" target="_blank">Coupe du monde 2022 - FIFA</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Coupe_du_monde_de_football_2022" target="_blank">Coupe du monde 2022 - Wikipédia</a></li>
+                    <li><a href="https://www.beinsports.com/france/" target="_blank">beIN SPORTS</a></li>
+                    <li><a href="https://lionsdelatlas.ma/" target="_blank">Lions de l'Atlas</a></li>
+                </ul>
+            </div>
+            <div class="contact-links">
+                <a href="https://www.facebook.com/fifa" target="_blank" class="contact-details"><i class="fa fa-facebook-square"></i> Facebook</a>
+                <a href="https://www.instagram.com/fifaworldcup/" target="_blank" class="contact-details"><i class="fa fa-instagram"></i> Instagram</a>
+                <a href="https://twitter.com/FIFAcom" target="_blank" class="contact-details"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="https://www.youtube.com/FIFATV" class="contact-details"><i class="fab fa-youtube"></i> Youtube</a>
+            </div>
+            <p>Copyright &copy; 2022 FIFA. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
